@@ -1,0 +1,9 @@
+ in 3.396980 seconds
+Result: 100 iterations
+  a[2099][ 300] = 0
+  a[2099][ 150] = 0
+  a[1200][1200] = 0
+  a[ 150][2099] = 0
+  a[ 300][2099] = 0
+Runtime: 3.401 s
+Performance: 0.676 GFlop/s

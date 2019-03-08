@@ -1,0 +1,63 @@
+1 Compile and run 10 times; note that it always produces the final balance 0.
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 10000000.00
+
+	After 1000000 $10 withdrawals, your balance is 0.00
+
+	Got same output in all 10 times.
+
+2 To parallelize, uncomment A1+A2, recompile and rerun, compare results.
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 2692880.00
+
+	After 1000000 $10 withdrawals, your balance is -593470.00
+
+
+3.1 Try 1: recomment A1+A2, uncomment B1+B2, recompile/run, compare on 1 cores and 4 cores.
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 2829350.00
+
+	After 1000000 $10 withdrawals, your balance is 48800.00
+
+3.2 FOUR CORE
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 0.00
+
+	After 1000000 $10 withdrawals, your balance is 0.00
+
+
+4.1 To fix: recomment B1+B2, uncomment A1+A2, C1+C2, recompile and rerun, compare on 1 core and 4 cores.
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 10000000.00
+
+	After 1000000 $10 withdrawals, your balance is 0.00
+
+4.2 FOUR CORE
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 5411070.00
+
+	After 1000000 $10 withdrawals, your balance is -4588930.00
+
+
+5 Uncomment A1 and A2 and append reduction reduction(+:balance) and reduction(-:balance) clauses in A1 and A2 resp. 
+Compare step 4 with this step.
+
+	Your starting bank account balance is 0.00
+
+	After 1000000 $10 deposits, your balance is 10000000.00
+
+	After 1000000 $10 withdrawals, your balance is 0.00
+
+	Output simalilar as one core of step-4.

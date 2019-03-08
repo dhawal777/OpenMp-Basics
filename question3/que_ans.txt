@@ -1,0 +1,5 @@
+1) What is the speedup on 6 cores relative to 1 core?
+
+	12.658625/2.450044 = 5.16
+
+2) Compare static, dynamic, and guided scheduling with chunk sizes 100 and 200. Which is better?

@@ -1,0 +1,12 @@
+1) What is the speedup on 6 cores relative to 1 core?
+
+	4.698301/0.831030 = 5.6535
+
+2) What is the speedup of 4 cores relative to 1 core?
+
+	4.698301/1.255946 = 3.74
+
+3)  There are three main reason behind above observation i.e not linear speedup:-
+	1. Using more than one processors necessitates communication, which is overhead that was not part of the original computation.
+	2. Secondly, if the processors do not have exactly the same amount of work to do, they may be idle part of the time (this is known as 		   load unbalance ), again lowering the actually attained speedup. 
+	3. Finally, code may have sections that are inherently sequential lead in lowering the speedup.

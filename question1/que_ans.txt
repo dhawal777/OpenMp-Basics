@@ -1,0 +1,24 @@
+Q1 Which of the three codes runs faster? Report the times of each of them.
+
+
+	Static runs faster among all three:-
+	Time Static: 0.10368
+	Time Guided: 0.109929
+	Time dynamic: 3.6993
+
+
+Q2 What is the run time if the chunk size in dynamic scheduling is set to 100 by replacing
+schedule(dynamic) by schedule(dynamic, chunk) in the first code?
+
+	Time dynamic Chunk: 0.115409
+
+
+Q3 (Loop Case) Compare the above code with schedule(static) and schedule(dynamic). Which of
+these three is fastest? Why?
+
+	Time Guided Loop: 36.0009
+	Time Static Loop: 54.0007
+	Time dynamic Loop: 36.0011
+
+	For loops where each iteration can take very different amounts of time, dynamic schedules,Guided Schedule
+	work best as the work will be split more evenly across threads.

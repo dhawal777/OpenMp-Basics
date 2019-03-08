@@ -1,0 +1,1 @@
+int solver(double **a, int n);
